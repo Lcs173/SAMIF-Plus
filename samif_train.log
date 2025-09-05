@@ -1,0 +1,59 @@
+2025-09-05 16:28:13,103 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:28:13,104 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:29:01,618 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:29:01,619 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:40:24,195 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:40:24,196 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:42:34,942 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:42:34,943 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:42:35,500 - SAMIF - INFO - Graph constructed!
+2025-09-05 16:42:35,502 - SAMIF - INFO - 10X data preparation completed
+2025-09-05 16:42:35,503 - SAMIF - INFO - Validating 10X data...
+2025-09-05 16:42:35,503 - SAMIF - INFO - 10X data validation passed
+2025-09-05 16:42:35,658 - SAMIF - INFO - Initializing models...
+2025-09-05 16:42:35,662 - SAMIF - WARNING - Failed to load real scGPT, using simulated model
+2025-09-05 16:42:35,665 - SAMIF - INFO - Using real pre-trained gene encoder
+2025-09-05 16:42:35,672 - SAMIF - INFO - Models initialized successfully
+2025-09-05 16:42:35,673 - SAMIF - INFO - Starting training from scratch
+2025-09-05 16:42:35,673 - SAMIF - INFO - Single modality data, skipping cross-modal alignment
+2025-09-05 16:42:35,673 - SAMIF - INFO - Training dynamic fusion gate...
+2025-09-05 16:43:00,128 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:43:00,129 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:43:00,365 - SAMIF - INFO - Graph constructed!
+2025-09-05 16:43:00,367 - SAMIF - INFO - 10X data preparation completed
+2025-09-05 16:43:00,367 - SAMIF - INFO - Validating 10X data...
+2025-09-05 16:43:00,368 - SAMIF - INFO - 10X data validation passed
+2025-09-05 16:43:00,434 - SAMIF - INFO - Initializing models...
+2025-09-05 16:43:00,436 - SAMIF - WARNING - Failed to load real scGPT, using simulated model
+2025-09-05 16:43:00,438 - SAMIF - INFO - Using real pre-trained gene encoder
+2025-09-05 16:43:00,443 - SAMIF - INFO - Models initialized successfully
+2025-09-05 16:43:00,443 - SAMIF - INFO - Starting training from scratch
+2025-09-05 16:43:00,443 - SAMIF - INFO - Single modality data, skipping cross-modal alignment
+2025-09-05 16:43:00,443 - SAMIF - INFO - Training dynamic fusion gate...
+2025-09-05 16:49:54,217 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:49:54,218 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:49:54,467 - SAMIF - INFO - Graph constructed!
+2025-09-05 16:49:54,469 - SAMIF - INFO - 10X data preparation completed
+2025-09-05 16:49:54,470 - SAMIF - INFO - Validating 10X data...
+2025-09-05 16:49:54,470 - SAMIF - INFO - 10X data validation passed
+2025-09-05 16:49:54,531 - SAMIF - INFO - Initializing models...
+2025-09-05 16:49:54,533 - SAMIF - WARNING - Failed to load real scGPT, using simulated model
+2025-09-05 16:49:54,534 - SAMIF - INFO - Using real pre-trained gene encoder
+2025-09-05 16:49:54,539 - SAMIF - INFO - Models initialized successfully
+2025-09-05 16:57:50,801 - SAMIF - INFO - Initializing SAMIF with parameters: {'device': device(type='cuda'), 'learning_rate': 0.001, 'learning_rate_sc': 0.01, 'learning_rate_adapter': 0.0001, 'weight_decay': 0.001, 'epochs': 3, 'epochs_sc': 300, 'epochs_adapter': 100, 'dim_output': 64, 'random_seed': 42, 'alpha': 10, 'beta': 1, 'theta': 0.1, 'lamda1': 10, 'lamda2': 1, 'deconvolution': False, 'datatype': '10X', 'use_pretrained': True, 'n_heads': 4, 'fusion_type': 'dynamic_gate', 'adapter_dim': 64, 'temperature': 0.1, 'n_negatives': 100, 'fusion_dropout': 0.1, 'attention_dropout': 0.1, 'use_batch_norm': True, 'image_model_name': 'resnet50', 'image_patch_size': 224, 'gene_encoder_layers': 3, 'gene_encoder_hidden': 256, 'optimizer_type': 'adam', 'momentum': 0.9, 'use_scheduler': True, 'scheduler_type': 'cosine', 'warmup_epochs': 10, 'grad_clip': 1.0, 'checkpoint_dir': 'checkpoints', 'log_interval': 50}
+2025-09-05 16:57:50,868 - SAMIF - INFO - Preparing 10X data...
+2025-09-05 16:57:51,133 - SAMIF - INFO - Graph constructed!
+2025-09-05 16:57:51,134 - SAMIF - INFO - 10X data preparation completed
+2025-09-05 16:57:51,135 - SAMIF - INFO - Validating 10X data...
+2025-09-05 16:57:51,135 - SAMIF - INFO - 10X data validation passed
+2025-09-05 16:57:51,203 - SAMIF - INFO - Initializing models...
+2025-09-05 16:57:51,205 - SAMIF - WARNING - Failed to load real scGPT, using simulated model
+2025-09-05 16:57:51,207 - SAMIF - INFO - Using real pre-trained gene encoder
+2025-09-05 16:57:51,212 - SAMIF - INFO - Models initialized successfully
+2025-09-05 16:57:51,212 - SAMIF - INFO - Starting training from scratch
+2025-09-05 16:57:51,213 - SAMIF - INFO - Single modality data, skipping cross-modal alignment
+2025-09-05 16:57:51,213 - SAMIF - INFO - Training dynamic fusion gate...
+2025-09-05 16:57:51,669 - SAMIF - INFO - Epoch 0, Loss: 56.9512
+2025-09-05 16:57:51,680 - SAMIF - INFO - Checkpoint saved: checkpoints/checkpoint_fusion_epoch_0.pt
+2025-09-05 16:57:51,690 - SAMIF - INFO - Fusion training finished!
+2025-09-05 16:57:51,691 - SAMIF - INFO - Training completed successfully!
