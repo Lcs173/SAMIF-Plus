@@ -11,13 +11,13 @@ import logging
 from scipy.sparse.csc import csc_matrix
 from scipy.sparse.csr import csr_matrix
 
-from .preprocess import (
+from preprocess import (
     preprocess_adj, preprocess_adj_sparse, preprocess, 
     construct_interaction, construct_interaction_KNN, 
     add_contrastive_label, get_feature, permutation, fix_seed,
     filter_with_overlap_gene, extract_image_features, prepare_data, validate_data
 )
-from .model import (
+from model import (
     Encoder, Encoder_sparse, Encoder_sc, Encoder_map,
     CrossModalEncoder, DynamicFusionGate,
     PreTrainedGeneEncoder, PreTrainedImageEncoder, Adapter,
@@ -171,9 +171,12 @@ class SAMIF:
             
         # 初始化模型
         self._init_models()
-        
+        # 初始化优化器
+        #self._init_optimizers()
         # 学习率调度器
         self.schedulers = []
+        #初始化优化器
+        self._init_optimizers()
         
     def _init_models(self):
         """Initialize all models based on configuration"""
@@ -262,6 +265,9 @@ class SAMIF:
     
     def _init_optimizers(self):
         """Initialize optimizers and schedulers"""
+        #确保schedulers列表存在
+        if not hasattr(self, 'schedulers'):
+            self.schedulers = []
         optimizers = []
         
         # 跨模态对齐的优化器

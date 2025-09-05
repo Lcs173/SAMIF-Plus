@@ -1,6 +1,7 @@
 import os
 import ot
 import torch
+import torch.nn as nn
 import random
 import numpy as np
 import scanpy as sc
